@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+</body>
+</html>
+<form class="discount_form">
+    <h2>割引現在価値</h2>
+    <dl>
+        <dt>1年後のキャッシュフロー（円）:</dt>
+        <dd><input type="number" class="box" name="money"></dd>
+        <dt>利回り（％）：</dt>
+        <dd><input type="number" class="box" name="percent"></dd>
+        <p><input type="button" class="calc-btn" onclick="calc(money.value, percent.value);" value="計算"></p>
+        <dt>1年後のキャッシュフローの現在価値（円）：</dt>
+        <dd><input id="nowMoney" class="box" type="text" readonly=""></dd>
+    </dl>
+</form>
